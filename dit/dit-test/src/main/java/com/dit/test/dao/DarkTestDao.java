@@ -8,5 +8,5 @@ public interface DarkTestDao{
 	Map getTest();
 	
 	List getListTest();
-
+   
 }
