@@ -21,7 +21,7 @@ public class DarkTestController {
 	@RequestMapping("/test1.do")
 	public ModelAndView test1(){
 		
-		System.out.println("===================");              
+		System.out.println("===================");           
 		System.out.println("===================" + StringUtil.isEmpty("test"));
 		Map rslt = darkTestService.getTest();
 		System.out.println("rslt======"+rslt);
