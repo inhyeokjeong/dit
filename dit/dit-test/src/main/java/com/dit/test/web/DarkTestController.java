@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.dit.test.service.DarkTestService;
+import com.dit.util.lang.StringUtil;
 
 
 @Controller
@@ -21,6 +22,7 @@ public class DarkTestController {
 	public ModelAndView test1(){
 		
 		System.out.println("===================");
+		System.out.println("===================" + StringUtil.isEmpty("test"));
 		Map rslt = darkTestService.getTest();
 		System.out.println("rslt======"+rslt);
 		ModelAndView view = new ModelAndView("/test/test");
