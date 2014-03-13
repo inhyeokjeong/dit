@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd"> 
+
+<mapper namespace="com.dark.test.dao">
+	
+	<select id="getTest" resultType="hashmap">
+	  	<![CDATA[
+		   	SELECT 
+		   		SYSDATE
+		   		, 1 AS AB
+		   	FROM 
+		   		DUAL
+	   	]]>
+	</select>
+	
+	<select id="getListTest" resultType="hashmap">
+	  	<![CDATA[
+		   	SELECT 
+		   		EXCEPTIONAL_CASE_CODE
+		   		, EXCEPTIONAL_CASE_VALUE
+		   		, DESCRIPTION
+		   	FROM 
+		   		IKEP4_EV_EXCEPTIONAL_CASE
+	   	]]>
+	</select>
+
+</mapper>
