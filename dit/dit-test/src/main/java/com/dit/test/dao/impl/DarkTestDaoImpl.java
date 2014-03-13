@@ -16,6 +16,6 @@ public class DarkTestDaoImpl extends SqlSessionDaoSupport implements DarkTestDao
 	}
 	
 	public List getListTest(){
-		return getSqlSession().selectList("getListTest");
+		return getSqlSession().selectList("getListTest");  
 	}
 }
